@@ -1,8 +1,6 @@
 // booksSlice.ts
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Book } from '../types/sherTypes';
-
-
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { Book } from "../types/sherTypes";
 
 interface BooksState {
   books: Book[];
@@ -13,7 +11,7 @@ const initialState: BooksState = {
 };
 
 const booksSlice = createSlice({
-  name: 'books',
+  name: "books",
   initialState,
   reducers: {
     addBook: (state, action: PayloadAction<Book>) => {
@@ -26,5 +24,6 @@ const booksSlice = createSlice({
 });
 
 export const { addBook, removeBook } = booksSlice.actions;
-export const selectAllBooks = (state: { books: BooksState }) => state.books.books;
+export const selectAllBooks = (state: { books: BooksState }) =>
+  state.books.books;
 export default booksSlice.reducer;

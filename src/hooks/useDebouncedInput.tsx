@@ -1,9 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // @ts-nocheck
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
-
-const useDebounce = (callback: { (): void; (arg0: any): void; }, delay: number | undefined) => {
+const useDebounce = (
+  callback: { (): void; (arg0: any): void },
+  delay: number | undefined,
+) => {
   const timeoutRef = useRef<any>(null);
 
   useEffect(() => {
@@ -27,4 +29,4 @@ const useDebounce = (callback: { (): void; (arg0: any): void; }, delay: number |
 
   return debouncedCallback;
 };
-export default useDebounce
+export default useDebounce;

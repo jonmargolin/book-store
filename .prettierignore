@@ -1,0 +1,11 @@
+dist
+**/*.html
+**/node_modules
+**/.git
+tailwind.config.js
+tsconfig.json
+vite.config.ts
+.eslintrc.cjs
+custom.d.ts
+postcss.config.js
+README.md
