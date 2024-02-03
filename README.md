@@ -1,30 +1,16 @@
-# React + TypeScript + Vite
+# The Book store
+## installation
+  Run npm install for installed packages
+  this project use vite for bundler 
+  npm run dev  will start the development server
+  [http://localhost:5713] 
+  <br/>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  Store Management
+ global items like shopping cart  are saved in th glob store with use RTK 
+ </br>
+ For each route react  context with react query are used for storing the data.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+ ## Styling
+ the project use Tailwind ui library.
+Modify the theme can be done in the tailwind config file.  
